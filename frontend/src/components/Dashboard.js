@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import InvoiceList from './InvoiceList';
 import Form from './InvoiceForm';
-import '../styles/dashboard.css'; // Import dashboard-specific styles
+import '../styles/dashboard.css'; 
 
 const Dashboard = () => {
   const [invoices, setInvoices] = useState([]);

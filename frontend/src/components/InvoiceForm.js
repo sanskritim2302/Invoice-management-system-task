@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { createInvoice } from '../api';
-import '../styles/global.css';  // Import global styles
+import '../styles/global.css';  
 import '../styles/invoiceForm.css';
 const InvoiceForm = () => {
     const [clientName, setClientName] = useState('');

@@ -1,6 +1,6 @@
 import * as chai from 'chai';
 import chaiHttp from 'chai-http';
-import app from '../app.js'; // Ensure this is your Express app
+import app from '../app.js';
 
 chai.use(chaiHttp);
 const { expect } = chai;

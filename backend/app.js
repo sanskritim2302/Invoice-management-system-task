@@ -1,12 +1,11 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import invoiceRoutes from './routes/invoiceRoutes.js'; // Ensure the correct path to your routes
+import invoiceRoutes from './routes/invoiceRoutes.js'; 
 
 const app = express();
 app.use(express.json());
-app.use('/api/invoices', invoiceRoutes); // Add your route here
+app.use('/api/invoices', invoiceRoutes); 
 
-// Example of a basic route for testing
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome to the Invoice API!' });
 });
