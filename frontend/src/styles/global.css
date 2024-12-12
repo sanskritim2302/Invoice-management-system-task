@@ -1,0 +1,21 @@
+/* Global Styles to ensure no overflow */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  .app-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px; /* Add padding to avoid content getting too close to the sides */
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  

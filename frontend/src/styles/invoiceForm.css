@@ -1,0 +1,94 @@
+/* Invoice Form Styles */
+.invoice-form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.invoice-form h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.invoice-form label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.invoice-form input,
+.invoice-form button {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.invoice-form input:focus,
+.invoice-form button:focus {
+    border-color: #27ae60; /* Highlight on focus */
+}
+
+.invoice-form input[type="number"] {
+    -moz-appearance: textfield; /* Hide number input up/down arrows */
+    appearance: textfield;
+}
+
+.invoice-form input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #27ae60;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.invoice-form button {
+    background-color: #27ae60;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.invoice-form button:hover {
+    background-color: #2ecc71; /* Brighter green on hover */
+}
+
+.invoice-form .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.invoice-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.invoice-form .form-group input {
+    width: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .invoice-form {
+        padding: 20px;
+    }
+}

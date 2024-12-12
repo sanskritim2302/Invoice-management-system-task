@@ -1,0 +1,183 @@
+/* dashboard.css */
+
+/* Overall dashboard container */
+.dashboard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .dashboard h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Invoice form styling */
+  form {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Align form inputs in a straight line for client name, amount, and due date */
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .form-row input {
+    width: 30%;
+  }
+  
+  /* Styling for error and loading messages */
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #f39c12;
+  }
+  
+  .error {
+    color: #e74c3c;
+  }
+  
+  /* Invoice List container styling */
+  .invoice-list {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  /* Button Styling */
+  button.approve, button.pay {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+  }
+  
+  button.approve {
+    background-color: #4CAF50;
+    margin-right: 10px;
+  }
+  
+  button.pay {
+    background-color: #008CBA;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  button.approve:hover {
+    background-color: #45a049;
+  }
+  
+  button.pay:hover {
+    background-color: #007bb5;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .dashboard {
+      padding: 15px;
+      margin: 20px auto;
+    }
+  
+    .dashboard h2 {
+      font-size: 2rem;
+    }
+  
+    .content-container {
+      padding: 10px;
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .form-row input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard {
+      padding: 10px;
+      margin: 10px auto;
+    }
+  
+    .dashboard h2 {
+      font-size: 1.8rem;
+    }
+  
+    button {
+      font-size: 0.8rem;
+      padding: 8px 12px;
+    }
+  }
+  
